@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\K\u00EC 7\\PRN221\\Video\\",
+  "WorkspaceRootPath": "D:\\Desktop\\PRN221-EditVdieo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E7EA20C-7984-4D30-A28E-EC6A264CFAE1}|Video\\Video.csproj|d:\\k\u00EC 7\\prn221\\video\\video\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4E7EA20C-7984-4D30-A28E-EC6A264CFAE1}|Video\\Video.csproj|d:\\desktop\\prn221-editvdieo\\video\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4E7EA20C-7984-4D30-A28E-EC6A264CFAE1}|Video\\Video.csproj|solutionrelative:video\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E7EA20C-7984-4D30-A28E-EC6A264CFAE1}|Video\\Video.csproj|d:\\k\u00EC 7\\prn221\\video\\video\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E7EA20C-7984-4D30-A28E-EC6A264CFAE1}|Video\\Video.csproj|D:\\Desktop\\PRN221-EditVdieo\\video\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E7EA20C-7984-4D30-A28E-EC6A264CFAE1}|Video\\Video.csproj|solutionrelative:video\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,39 +18,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\K\u00EC 7\\PRN221\\Video\\Video\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\Desktop\\PRN221-EditVdieo\\Video\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Video\\MainWindow.xaml",
-              "ToolTip": "D:\\K\u00EC 7\\PRN221\\Video\\Video\\MainWindow.xaml",
+              "ToolTip": "D:\\Desktop\\PRN221-EditVdieo\\Video\\MainWindow.xaml",
               "RelativeToolTip": "Video\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-03-25T07:32:45.215Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\K\u00EC 7\\PRN221\\Video\\Video\\MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Desktop\\PRN221-EditVdieo\\Video\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Video\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\K\u00EC 7\\PRN221\\Video\\Video\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Desktop\\PRN221-EditVdieo\\Video\\MainWindow.xaml.cs",
               "RelativeToolTip": "Video\\MainWindow.xaml.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAuwDsAAAANAAAA",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAqwJoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T05:28:53.9Z"
+              "WhenOpened": "2024-03-25T05:28:53.9Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             }
           ]
         }

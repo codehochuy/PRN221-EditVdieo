@@ -93,5 +93,69 @@ namespace Video
                 media.Play();
             }
         }
+
+        private void btnCutVideo_Click(object sender, RoutedEventArgs e)
+        {
+            if (media.Source != null)
+            {
+                // Tính toán thời lượng của video
+                TimeSpan totalDuration = media.NaturalDuration.TimeSpan;
+                double segmentDuration = totalDuration.TotalSeconds / 5; // Chia video thành 5 đoạn bằng nhau
+
+                // Xóa bỏ các đoạn video cũ trong các Grid
+                gridSegments1.Children.Clear();
+                gridSegments2.Children.Clear();
+                gridSegments3.Children.Clear();
+                gridSegments4.Children.Clear();
+                gridSegments5.Children.Clear();
+
+                // Hiển thị 5 đoạn video lên màn hình
+                for (int i = 0; i < 5; i++)
+                {
+                    double startTime = i * segmentDuration;
+                    double endTime = startTime + segmentDuration;
+
+                    // Tạo một đối tượng MediaElement mới để hiển thị đoạn video
+                    MediaElement segmentMedia = new MediaElement();
+                    segmentMedia.Source = media.Source;
+                    segmentMedia.LoadedBehavior = MediaState.Manual;
+                    segmentMedia.UnloadedBehavior = MediaState.Manual;
+                    segmentMedia.Volume = media.Volume;
+
+                    // Cắt đoạn video và thiết lập thời gian bắt đầu và kết thúc
+                    segmentMedia.Position = TimeSpan.FromSeconds(startTime);
+                    segmentMedia.Play();
+
+                    // Thêm đoạn video vào Grid tương ứng
+                    switch (i)
+                    {
+                        case 0:
+                            gridSegments1.Children.Add(segmentMedia);
+                            break;
+                        case 1:
+                            gridSegments2.Children.Add(segmentMedia);
+                            break;
+                        case 2:
+                            gridSegments3.Children.Add(segmentMedia);
+                            break;
+                        case 3:
+                            gridSegments4.Children.Add(segmentMedia);
+                            break;
+                        case 4:
+                            gridSegments5.Children.Add(segmentMedia);
+                            break;
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Chưa chọn video.");
+            }
+        }
+
+
+
+
+
     }
 }

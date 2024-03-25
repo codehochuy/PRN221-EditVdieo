@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Video"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" AllowDrop="True" Drop="Window_Drop">
+        Title="MainWindow" Height="600" Width="800" AllowDrop="True" Drop="Window_Drop">
     <Grid Margin="0,0,0,-16">
         <MediaElement Name="media" HorizontalAlignment="Left" Height="277" Margin="23,25,0,0" VerticalAlignment="Top" Width="392" MediaOpened="media_MediaOpened"/>
         <Button x:Name="btnPlay" Content="Play" HorizontalAlignment="Left" Margin="91,348,0,0" VerticalAlignment="Top" Height="20" Width="51" Click="btnPlay_Click"/>
@@ -14,6 +14,14 @@
         <Slider HorizontalAlignment="Left" Margin="23,310,0,0" VerticalAlignment="Top" Width="390" Name="Seek" ValueChanged="Seek_ValueChanged"/>
         <Slider HorizontalAlignment="Left" Margin="338,348,0,0" VerticalAlignment="Top" Width="75" Name="Vol" Maximum="1" LargeChange="0.1" SmallChange="0.01" Value="1" ValueChanged="Vol_ValueChanged"/>
         <Button x:Name="btnSelectVideo" Content="Select Video" HorizontalAlignment="Left" Margin="148,387,0,0" VerticalAlignment="Top" Width="96" Height="20" Click="btnSelectVideo_Click"/>
+        <Button x:Name="btnCutVideo" Content="Cut Video" HorizontalAlignment="Left" Margin="250,387,0,0" VerticalAlignment="Top" Width="96" Height="20" Click="btnCutVideo_Click"/>
+
+        <!-- Grid để chứa các đoạn video cắt ra -->
+        <Grid x:Name="gridSegments1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,400,0,0" Width="112" Height="91"/>
+        <Grid x:Name="gridSegments2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="147,400,0,0" Width="112" Height="91"/>
+        <Grid x:Name="gridSegments3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="271,400,0,0" Width="112" Height="91"/>
+        <Grid x:Name="gridSegments4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="395,400,0,0" Width="112" Height="91"/>
+        <Grid x:Name="gridSegments5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="519,400,0,0" Width="112" Height="91"/>
 
     </Grid>
 </Window>
