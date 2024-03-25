@@ -10,6 +10,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using System.IO;
 namespace Video
 {
     /// <summary>
@@ -153,9 +154,71 @@ namespace Video
             }
         }
 
+      
+
+     
+
+        private List<Grid> selectedGrids = new List<Grid>();
+        private void GridSegment_Click(object sender, MouseButtonEventArgs e)
+        {
+            Grid clickedGrid = (Grid)sender;
+
+            // Kiểm tra xem grid đã được chọn trước đó hay chưa
+            if (selectedGrids.Contains(clickedGrid))
+            {
+                // Nếu đã chọn, hủy bỏ lựa chọn bằng cách loại bỏ grid khỏi danh sách
+                selectedGrids.Remove(clickedGrid);
+                clickedGrid.Background = Brushes.Transparent; // Đặt màu nền về mặc định
+            }
+            else
+            {
+                // Nếu chưa chọn, thêm grid vào danh sách và đặt màu nền để chỉ định grid đã được chọn
+                selectedGrids.Add(clickedGrid);
+                clickedGrid.Background = Brushes.LightBlue; // Thay đổi màu nền để chỉ định grid đã được chọn
+
+                // Hiển thị số thứ tự trên grid
+                TextBlock textBlock = new TextBlock();
+                textBlock.Text = (selectedGrids.Count).ToString(); // Số thứ tự bắt đầu từ 1
+                textBlock.Foreground = Brushes.Black;
+                textBlock.FontSize = 12;
+                textBlock.Margin = new Thickness(5, 5, 0, 0);
+                clickedGrid.Children.Add(textBlock);
+            }
+        }
 
 
 
-
+        private void btnMergeVideo_Click(object sender, RoutedEventArgs e)
+        {
+            selectedGrids.Sort((grid1, grid2) =>
+            {
+                int order1 = int.Parse(((TextBlock)grid1.Children[0]).Text);
+                int order2 = int.Parse(((TextBlock)grid2.Children[0]).Text);
+                return order1.CompareTo(order2);
+            });
+            List<string> selectedVideoPaths = new List<string>();
+            foreach (var grid in selectedGrids)
+            {
+                string videoPath = ""; 
+                selectedVideoPaths.Add(videoPath);
+            }
+            try
+            {
+                string mergedVideoPath = MergeVideos(selectedVideoPaths);
+            mergedMedia.Source = new Uri(mergedVideoPath);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An unhandled exception occurred: " + ex.Message);
+            }
+        }
+        private string MergeVideos(List<string> videoPaths)
+        {
+            string outputDirectory = @"D:\Desktop";
+            string outputFileName = "merged_video.mp4";
+            string outputFilePath = System.IO.Path.Combine(outputDirectory, outputFileName);
+            File.Copy(videoPaths[0], outputFilePath, true);
+            return outputFilePath;
+        }
     }
 }
