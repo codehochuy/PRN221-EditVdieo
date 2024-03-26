@@ -221,11 +221,22 @@ namespace Video
             else if (clickedGrid == gridSegments5)
                 gridIndex = 4;
 
+            /* if (selectedGrids.Contains(clickedGrid))
+             {
+                 selectedGrids.Remove(clickedGrid);
+                 clickedGrid.Background = Brushes.Transparent;
+             }*/
             if (selectedGrids.Contains(clickedGrid))
             {
                 selectedGrids.Remove(clickedGrid);
                 clickedGrid.Background = Brushes.Transparent;
+                TextBlock textBlock = clickedGrid.Children.OfType<TextBlock>().FirstOrDefault();
+                if (textBlock != null)
+                {
+                    clickedGrid.Children.Remove(textBlock);
+                }
             }
+
             else
             {
                 selectedGrids.Add(clickedGrid);
