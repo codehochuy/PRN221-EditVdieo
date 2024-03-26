@@ -24,10 +24,6 @@
         <Grid x:Name="gridSegments5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="519,400,0,0" Width="112" Height="91" MouseLeftButtonDown="GridSegment_Click"/>
 
         <Button x:Name="btnMergeVideo" Content="Merge Video" HorizontalAlignment="Left" Margin="355,387,0,0" VerticalAlignment="Top" Width="96" Height="20" Click="btnMergeVideo_Click"/>
-
-        <Grid x:Name="gridMergedVideo" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="398,23,0,0" Width="392" Height="277">
-            <MediaElement x:Name="mergedMedia" Margin="409,-302,-409,302"/>
-        </Grid>
-        
+        <Button x:Name="btnAddAudio" Content="Add Audio" HorizontalAlignment="Left" Margin="464,387,0,0" VerticalAlignment="Top" Width="96" Height="20" Click="btnAddAudio_Click"/>
     </Grid>
 </Window>

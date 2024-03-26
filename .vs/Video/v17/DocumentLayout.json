@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\Desktop\\PRN221-EditVdieo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E7EA20C-7984-4D30-A28E-EC6A264CFAE1}|Video\\Video.csproj|D:\\Desktop\\PRN221-EditVdieo\\video\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E7EA20C-7984-4D30-A28E-EC6A264CFAE1}|Video\\Video.csproj|d:\\desktop\\prn221-editvdieo\\video\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E7EA20C-7984-4D30-A28E-EC6A264CFAE1}|Video\\Video.csproj|solutionrelative:video\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E7EA20C-7984-4D30-A28E-EC6A264CFAE1}|Video\\Video.csproj|d:\\desktop\\prn221-editvdieo\\video\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4E7EA20C-7984-4D30-A28E-EC6A264CFAE1}|Video\\Video.csproj|D:\\Desktop\\PRN221-EditVdieo\\video\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4E7EA20C-7984-4D30-A28E-EC6A264CFAE1}|Video\\Video.csproj|solutionrelative:video\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -30,8 +30,7 @@
               "RelativeToolTip": "Video\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-03-25T07:32:45.215Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -41,7 +40,7 @@
               "RelativeDocumentMoniker": "Video\\MainWindow.xaml.cs",
               "ToolTip": "D:\\Desktop\\PRN221-EditVdieo\\Video\\MainWindow.xaml.cs",
               "RelativeToolTip": "Video\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAMYAAAAAAAAAAIAwwN0AAAAJAAAA",
+              "ViewState": "AQIAAAIBAAAAAAAAAAArwA8BAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-25T05:28:53.9Z",
               "IsPinned": true,
